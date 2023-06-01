@@ -2,28 +2,30 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?
-    family=Poppins:wght@100;200;300;400;600;700&display=swap" 
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>University Website Design</title>
 </head>
 <body>
 <section class="header">
     <nav>
         <a href="index.html"><img src="logo.png"></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">PROGRAMS</a></li>
-                <li><a href="">ADMISSIONS</a></li>
-                <li><a href="">CONTACT US</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
             </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 
 <div class="text-box">
@@ -34,7 +36,199 @@
     </p>
     <a href="" class="hero-btn">Visit us to know more</a>
 </div>
+
     </section>
-    
+
+
+<!----- Courses ----->
+
+<section class="courses">
+    <h1>Our Courses</h1>
+    <p>We offer the following courses.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>FOUNDATION</h3>
+            <p>A foundation course, also known as a foundation course or pre-university courses, 
+                is an academic course designed to prepare students for entry into an undergraduate degree course. 
+                It is typically aimed at students who have completed their secondary education but may not meet the direct entry requirements 
+                for their desired bachelor's degree course.</p>
+        </div>
+        <div class="course-col">
+            <h3>UNDERGRADUATE</h3>
+            <p>An undergraduate course refers to a degree course that students pursue after completing their secondary education. 
+               Undergraduate courses typically offer bachelor's degrees, which are awarded upon completion of the course.<br>
+               Our course offers - <br>
+            1 - BA (HONS) Business & Management<br>
+            2 - BSc (HONS) Computer Science<br>
+            3 - BSc (HONS) Psychology<br>
+            4 - B.S.N (HONS) Nursing<br>
+            5 - B.TECH (HONS) Technology <br>
+         </p>
+        </div>
+        <div class="course-col">
+            <h3>POSTGRADUATE</h3>
+            <p>A postgraduate course, also known as a graduate course, is an educational course that follows the completion of an undergraduate
+                 degree. It is designed to provide advanced knowledge, specialized skills, and research opportunities in a specific field of study. 
+                Postgraduate course are typically pursued at the master's level.<br>
+                Our course offers - <br>
+            1 - MA (HONS) Business & Management<br>
+            2 - MSc (HONS) Computer Science<br>
+            3 - MSc (HONS) Psychology<br>
+            4 - Msc (HONS) Nursing<br>
+            5 - M.TECH (HONS) Technology <br>
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!----- campus ----->
+
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Horizonvale University is known for its diverse and extensive higher education system, offering a wide range of academic course and 
+        research opportunities. It is recognized globally for its high-quality education and innovative teaching methods. 
+        The U.S. campus is particularly renowned for its emphasis on research and development in various fields, including science, technology, 
+        engineering, and more. 
+        Additionally, the U.S. campus is known for its vibrant campus life, with numerous 
+        student organizations, extracurricular activities, and a strong sense of community. The emphasis on holistic education, critical thinking, 
+        and interdisciplinary 
+        approaches further contributes to the reputation of the U.S. campus as a hub for academic excellence and intellectual growth.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="New York.png">
+                <div class="layer">
+                    <h3>New York</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="Los Angeles.png">
+                <div class="layer">
+                    <h3>Los Angeles</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="San Francisco.png">
+                <div class="layer">
+                    <h3>San Francisco</h3>
+                </div>
+            </div>
+       </div>
+       
+</section>
+
+<!----- Facilities ----->
+
+<section class="facilities">
+    <h1> Our Facilities</h1>
+    <p>A university typically provides a wide range of facilities to support its students, faculty, and staff. <br> 
+       Here at Horizonvale University, We offer the following facilities - <br>
+       1 - Libraries <br>
+       2 - Laboratories <br>
+       3 - Computer Lab <br>
+       4 - Sports Facilities <br>
+       5 - Cafeterias <br>
+       6 - Health Services <br>
+       7 - Lecture Hall and Auditoriums <br>
+    </p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="library.png">     
+            <h3>Library</h3>
+            <p>A library serves as a valuable resource for students, faculty, and staff by providing access to a wide range of academic materials and resources.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="auditorium.png">
+            <h3>Lecture hall and Auditorium</h3>
+            <p>Lecture halls and auditoriums are essential components of a university campus, providing spaces for large-group instruction, lectures, presentations, and other academic events.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="Sports Facilities.png">
+            <h3>Sports Facilities</h3>
+            <p>Sports facilities are an integral part of a university campus, providing students, faculty, and staff with opportunities for physical fitness and sports activities. </p>
+        </div>
+    </div>
+</section>
+
+<!----- Testimonials ----->
+
+<section class="testimonials">
+    <h1> Student Testimonials - What Our Students Says</h1>
+    <p>Student Testimonials are important has they share their success and personal growth at the university. Through their testimonials students praise the university's campus facilities, extracurricular opportunities, and career support, emphasizing the holistic experience that prepares them for future endeavors.</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="user 1.jpg">
+            <div>
+                <p>
+                    "Enrolling in Horizonvale University to pursue my Master is one of the best career decisions I've made. Attending this university has been a transformative experience for me. The dedicated faculty, vibrant campus life, and countless opportunities for personal and academic growth have exceeded my expectations".
+                </p>
+                <h3> Florina D'souza</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div> 
+        <div class="testimonial-col">
+            <img src="user 2.jpg">
+            <div>
+                <p>
+                    "Enrolling in Horizonvale University to pursue my Master is one of the best career decisions I've made. "I'm truly grateful for the education I received at this university. The supportive community, hands-on learning experiences, and access to cutting-edge resources have prepared me well for my future career."
+                </p>
+                <h3> Joshua Mark</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------ Call to Action ----->
+
+<section class="cta">
+    <h1>
+        Enroll for our various online courses <br> anywhere from the world.
+    </h1>
+    <a href="" class="hero-btn">Contact Us</a>
+</section>
+
+<!------ Footer ----->
+
+<section class="footer">
+    <h4> About Us</h4>
+    <p>"Welcome to Horizonvale University, a prestigious institution dedicated to excellence in education, research, and innovation. With a rich history spanning 5 years, we are committed to nurturing intellectual curiosity, fostering critical thinking, and empowering our students to make a positive impact on the world.<br>
+        At Horizonvale University, we believe in providing a dynamic and inclusive learning environment that prepares students for success in their chosen fields. Our distinguished faculty, comprised of accomplished scholars and industry professionals, are passionate about mentoring the next generation of leaders, pushing the boundaries of knowledge, and addressing real-world challenges.<br>
+        Whether you are a prospective student, a dedicated faculty member, an accomplished alumni, or a valued partner, we invite you to join us on this transformative journey. Together, let's inspire, explore, and shape a brighter future.</p>
+      
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p> Made with <i class="fa fa-heart-o"></i> by Evita</p>
+    </section>
+
+<!------ Javascript for Menu ------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+
+</script>
+
 </body>
 </html>
